@@ -16,14 +16,15 @@ body {
 header {
     background: #bfa43f;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
 header img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+    width: 100vw;        /* Full viewport width */
+    height: auto;        /* Maintain aspect ratio */
+    border-radius: 0;    /* Remove rounded corners */
+    display: block;      /* Remove extra space */
 }
 
 .container {
