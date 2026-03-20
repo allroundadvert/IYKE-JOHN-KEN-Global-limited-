@@ -43,8 +43,8 @@ header img {
     font-weight: bold;
 }
 
-.call { background: #996600; }
-.whatsapp { background: #cc9900; }
+.call { background: #ff4d4d; }       /* Red call button */
+.whatsapp { background: #25d366; }   /* Green WhatsApp button */
 
 .form-box {
     background: #fff8e1;
@@ -53,7 +53,7 @@ header img {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-input, select {
+input, select, textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -88,12 +88,17 @@ input, select {
     margin-bottom: 10px;
 }
 
-.carousel-container img {
-    min-width: 50%;
-    animation: scroll 10s linear infinite;
+.carousel-slide {
+    display: flex;
+    min-width: 200%;
+    animation: slide 8s linear infinite alternate;
 }
 
-@keyframes scroll {
+.carousel-slide img {
+    width: 50%;
+}
+
+@keyframes slide {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
@@ -138,13 +143,16 @@ h2, h3 {
 <div class="container">
 <h2 style="text-align:center;">Products</h2>
 
+<!-- Moving first two images -->
 <div class="carousel-container">
+<div class="carousel-slide">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0063.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0065.jpg">
 </div>
+</div>
 
+<!-- Gallery with all previous images restored -->
 <div class="gallery">
-<!-- ALL OTHER IMAGES -->
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0066(1).jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0068.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0069.jpg">
@@ -172,7 +180,6 @@ h2, h3 {
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(82).jpeg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(85).jpeg">
 </div>
-</div>
 
 <div class="container">
 <div class="form-box">
@@ -184,6 +191,7 @@ h2, h3 {
 <option>New Customer</option>
 <option>Old Customer</option>
 </select>
+<input type="text" id="specifications" placeholder="Specifications">
 <h3>Select Products</h3>
 <div class="grid">
 <label><input type="checkbox" value="Multi Meter"> Multi Meter</label>
@@ -212,14 +220,21 @@ h2, h3 {
 
 <script>
 function sendToWhatsApp() {
-let name = document.getElementById("name").value;
-let phone = document.getElementById("phone").value;
-let location = document.getElementById("location").value;
-let type = document.getElementById("customerType").value;
-let items = [];
-document.querySelectorAll("input[type=checkbox]:checked").forEach(el=>{items.push(el.value);});
-let message = "IYKE JOHN-KEN ORDER%0A%0A" + "Name: " + name + "%0A" + "Phone: " + phone + "%0A" + "Location: " + location + "%0A" + "Customer: " + type + "%0A%0A" + "Items: " + items.join(", ");
-window.open("https://wa.me/2348033378623?text=" + message);
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let location = document.getElementById("location").value;
+    let type = document.getElementById("customerType").value;
+    let specs = document.getElementById("specifications").value;
+    let items = [];
+    document.querySelectorAll("input[type=checkbox]:checked").forEach(el=>{items.push(el.value);});
+    let message = "IYKE JOHN-KEN ORDER%0A%0A" 
+        + "Name: " + name + "%0A" 
+        + "Phone: " + phone + "%0A" 
+        + "Location: " + location + "%0A" 
+        + "Customer: " + type + "%0A" 
+        + "Specifications: " + specs + "%0A%0A" 
+        + "Items: " + items.join(", ");
+    window.open("https://wa.me/2348033378623?text=" + message);
 }
 document.getElementById("whatsappBtn").href = "https://wa.me/2348033378623?text=Hello I want to make enquiry";
 </script>
