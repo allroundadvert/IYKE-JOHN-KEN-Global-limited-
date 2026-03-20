@@ -1,34 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IYKE JOHN-KEN Global Limited</title>
-
 <style>
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #f4f4f4;
 }
-
 header {
     background: #0a3d62;
     color: white;
     padding: 20px;
     text-align: center;
 }
-
-header img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
 .container {
     padding: 20px;
 }
-
 .btn {
     display: inline-block;
     padding: 12px 20px;
@@ -37,71 +26,47 @@ header img {
     color: white;
     border-radius: 5px;
 }
-
 .call { background: #27ae60; }
 .whatsapp { background: #25D366; }
-
 .form-box {
     background: white;
     padding: 20px;
     border-radius: 10px;
 }
-
 input, select {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
 }
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-}
+    margin-top: 20px;
+}.gallery img { width: 100%; border-radius: 10px; }
 
-.gallery img {
-    width: 100%;
-    border-radius: 10px;
-}
+.slider { grid-column: span 2; display: flex; overflow: hidden; }
 
-.submit-btn {
-    background: #0a3d62;
-    color: white;
-    padding: 15px;
-    border: none;
-    width: 100%;
-}
-</style>
+.slider img { width: 50%; animation: slide 5s infinite alternate; }
+
+@keyframes slide { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } } .gallery img { width: 100%; border-radius: 10px; }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; } .submit-btn { background: #0a3d62; color: white; padding: 15px; border: none; width: 100%; font-size: 16px; } </style>
+
 </head>
-
-<body>
-
-<header>
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/1773957379227.png">
-
+<body><header>
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/1773957379227.png" alt="Header Image" style="width:100%; height:auto; border-radius:10px;">
 <h1>IYKE JOHN-KEN Global Limited</h1>
 <p><b>A division of John Kennedy I. Ifemeje</b></p>
 <p>Importer & Exporter of High Quality Carpentry, Engineering Tools & Building Materials</p>
+<p><b>Head Office:</b> E/471 Bridge Head Market, Onitsha, Anambra State</p>
+<p><b>Branch:</b> 11 Trans Amadi, Port Harcourt, River State, Nigeria</p><a href="tel:08039584650" class="btn call">Call Now</a> <a id="whatsappBtn" class="btn whatsapp">WhatsApp Us</a>
 
-<p><b>Head Office:</b> E/471 Bridge Head Market, Onitsha</p>
-<p><b>Branch:</b> 11 Trans Amadi, Port Harcourt</p>
-
-<a href="tel:08039584650" class="btn call">Call Now</a>
-<a id="whatsappBtn" class="btn whatsapp">WhatsApp Us</a>
-</header>
-
-<div class="container">
-<h2 style="text-align:center;">Products</h2>
-
-<div class="gallery">
+</header><div class="container">
+  <h2 style="text-align:center;">Our Products Gallery</h2>
+  <div class="gallery">
+<!-- OLD IMAGES -->
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0063.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0065.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0065.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0066(1).jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0068.jpg">
@@ -116,73 +81,110 @@ input, select {
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0095.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0098.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0137.jpg">
-<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0135.jpg">
-</div>
-</div>
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0135.jpg"><!-- NEW IMAGES --><img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/download%20(15).webp">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/download%20(16).webp">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(72).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(74).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(75).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(76).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(77).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(78).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(79).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(80).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(82).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(85).jpeg">
+</div><!-- Other images -->
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(72).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(74).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(75).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(76).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(77).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(78).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(79).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(80).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(82).jpeg">
+<img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/314f168142954a08e5980ba8be22bc3c70c081a3/images%20(85).jpeg">
 
-<div class="container">
+</div>
+</div><div class="container">
 <div class="form-box">
-
-<h2>Customer Order Form</h2>
-
-<input type="text" id="name" placeholder="Name">
+<h2>Customer Order Form</h2><input type="text" id="name" placeholder="Name">
 <input type="text" id="phone" placeholder="Phone Number">
-<input type="text" id="location" placeholder="Location">
-
-<select id="customerType">
+<input type="text" id="location" placeholder="Location"><select id="customerType">
+<option value="">New or Old Customer</option>
 <option>New Customer</option>
 <option>Old Customer</option>
-</select>
-
-<h3>Select Products</h3>
-
-<div class="grid">
-<label><input type="checkbox" value="Multi Meter"> Multi Meter</label>
-<label><input type="checkbox" value="Tool Box"> Electrical Tools Box</label>
-<label><input type="checkbox" value="Mechanical"> Mechanical</label>
+</select><h3>Select Products / Services</h3><div class="grid">
+<label><input type="checkbox" value="Multi Meters"> Multi Meters</label>
+<label><input type="checkbox" value="Electrical Tools Box"> Electrical Tools Box</label>
+<label><input type="checkbox" value="Mechanical Tools"> Mechanical</label>
 <label><input type="checkbox" value="Workshop Press"> Workshop Press</label>
-<label><input type="checkbox" value="Crane"> Workshop Crane</label>
-<label><input type="checkbox" value="Drill"> Cordrill Machine</label>
-<label><input type="checkbox" value="Cutter"> Knives Cutter</label>
-<label><input type="checkbox" value="Bag Closer"> Bag Closer Machine</label>
+<label><input type="checkbox" value="Workshop Crane"> Workshop Crane</label>
+<label><input type="checkbox" value="Cordrill Machine"> Cordrill Machine</label>
+<label><input type="checkbox" value="Knives Cutter"> Knives Cutter</label>
+<label><input type="checkbox" value="Bag Closer Machine"> Bag Closer Machine</label>
 <label><input type="checkbox" value="Cable Lock"> Cable Lock</label>
-<label><input type="checkbox" value="Grease"> Grease Bullet</label>
-<label><input type="checkbox" value="Carpenter"> Carpenter Tools</label>
-<label><input type="checkbox" value="Scroll"> Scroll Machines</label>
-<label><input type="checkbox" value="Car Wash"> Battery Car Wash</label>
-<label><input type="checkbox" value="Drawer Box"> Complete 7 Drawer Tools Box</label>
-</div>
-
-<button class="submit-btn" onclick="sendToWhatsApp()">Submit</button>
+<label><input type="checkbox" value="Grease Bullet"> Grease Bullet</label>
+<label><input type="checkbox" value="Carpenter Tools"> Carpenter Tools</label>
+<label><input type="checkbox" value="Scroll Machines"> Scroll Machines</label>
+<label><input type="checkbox" value="Battery Car Wash"> Battery Car Wash</label>
+<label><input type="checkbox" value="Complete 7 Drawer Tools Box"> Complete 7 Drawer Tools Box</label>
+</div><button class="submit-btn" onclick="sendToWhatsApp()">Submit Order</button>
 
 </div>
-</div>
-
-<script>
+</div><div class="container">
+  <h2 style="text-align:center;">More Products</h2>
+  <div class="gallery">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0063.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0065.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0065.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0066(1).jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0068.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0069.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0072.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0075.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0079(1).jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0080.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0081.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0087.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0093.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0095.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0098.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0137.jpg">
+    <img src="https://raw.githubusercontent.com/allroundadvert/IYKE-JOHN-KEN-Global-limited-/11017b19345b614108273dea1f1e2b312b2b2121/IMG-20260312-WA0135.jpg">
+  </div>
+</div><div class="container">
+  <h2 style="text-align:center;">Our Location</h2>
+  <iframe src="https://maps.google.com/maps?q=Bridge%20Head%20Market%20Onitsha%20Anambra%20State&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+</div><div class="container">
+  <h2 style="text-align:center;">Our Location</h2>
+  <iframe src="https://maps.google.com/maps?q=Bridge%20Head%20Market%20Onitsha%20Anambra%20State&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+</div><script>
 function sendToWhatsApp() {
-let name = document.getElementById("name").value;
-let phone = document.getElementById("phone").value;
-let location = document.getElementById("location").value;
-let type = document.getElementById("customerType").value;
+    var name = document.getElementById('name').value;
+    var phone = document.getElementById('phone').value;
+    var location = document.getElementById('location').value;
+    var type = document.getElementById('customerType').value;
 
-let items = [];
-document.querySelectorAll("input[type=checkbox]:checked").forEach(el=>{
-items.push(el.value);
-});
+    var items = [];
+    document.querySelectorAll('input[type=checkbox]:checked').forEach((el) => {
+        items.push(el.value);
+    });
 
-let message = "IYKE JOHN-KEN ORDER%0A%0A"
-+ "Name: " + name + "%0A"
-+ "Phone: " + phone + "%0A"
-+ "Location: " + location + "%0A"
-+ "Customer: " + type + "%0A%0A"
-+ "Items: " + items.join(", ");
+    var message = "*IYKE JOHN-KEN GLOBAL LIMITED ORDER*%0A%0A" +
+    "Name: " + name + "%0A" +
+    "Phone: " + phone + "%0A" +
+    "Location: " + location + "%0A" +
+    "Customer Type: " + type + "%0A%0A" +
+    "*Selected Items:*%0A" + items.join(", ") + "%0A%0A" +
+    "Please process my order. I need quality tools and fast delivery.";
 
-window.open("https://wa.me/2348033378623?text=" + message);
+    var url = "https://wa.me/2348033378623?text=" + message;
+    window.open(url, '_blank');
 }
 
-document.getElementById("whatsappBtn").href =
-"https://wa.me/2348033378623?text=Hello I want to make enquiry";
-</script>
+// WhatsApp button quick message
 
-</body>
+document.getElementById("whatsappBtn").href = "https://wa.me/2348033378623?text=*Hello IYKE JOHN-KEN Global Limited!*%0AI want to make inquiries about your tools and building materials. Please assist me.";
+</script></body>
 </html>
